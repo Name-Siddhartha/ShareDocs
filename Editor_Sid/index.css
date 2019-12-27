@@ -1,143 +1,181 @@
-body {
-    font-family: Verdana, sans-serif;
-    /*font-size: 0.9em;*/
-    margin: 0;
-}
+@media only screen and (min-width: 1080px) {
+    body {
+        font-family: Verdana, sans-serif;
+        /*font-size: 0.9em;*/
+        margin: 0;
+        background-color: white;
+    }
 
-#header {
-    padding-left: 20px;
-    color: white;
-    background-color: #0d47a1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: inline-flex;
-}
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #bbb;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #999;
+    }
+
+    #header {
+        padding-left: 20px;
+        color: white;
+        background-image: linear-gradient(to right, #0d47a1, #1565c0, #1976d2);
+        /*linear-gradient(to left, #0d47a1, #1565c0);*/
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: inline-flex;
+    }
 
 
-#header .logo-text {
-    padding-left: px;
-    padding-top: 8px;
-    padding-bottom: 10px;
-    font-size: 32px;
-    font-family: 'Patua One', cursive;
-}
+    #header .logo-text {
+        padding-left: px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        font-size: 32px;
+        font-family: 'Patua One', cursive;
+    }
 
-#header .logo-icon {
-    margin-left: 0px;
-    margin-top: 13px;
-    margin-bottom: 10px;
-}
+    #header .logo-icon {
+        margin-left: 0px;
+        margin-top: 13px;
+        margin-bottom: 10px;
+    }
 
-#header #utility {
-    margin-left: 1250px;
-    display: inline-flex;
-}
+    #header #utility {
+        margin-left: 65%;
+        display: inline-flex;
+        align-items: stretch;
+    }
 
-#header #utility .download-doc,
-.print-doc {
-    display: inline-flex;
-}
+    #header #utility .download-doc,
+    .print-doc {
+        display: inline-flex;
+    }
 
-#header #utility .icon {
-    width: 45px;
-    color: white;
-    margin: 5px 5px;
-    align-content: right;
-    fill: white;
-    /*border: 1px solid black;
-    border-radius: 4px;*/
-}
+    #header #utility .icon {
+        width: 30px;
+        color: white;
+        margin: 17px 5px;
+        align-content: right;
+        fill: white;
+        /*border: 1px solid black;
+        border-radius: 4px;*/
+    }
 
-#header #utility .text {
-    width: 100px;
-    height: 22px;
-    margin: 10px 6px;
-    font-size: 20px;
-    /*border: 1px solid white;*/
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-}
+    #header #utility .text {
+        width: 80px;
+        height: 18px;
+        margin: 20px 6px;
+        font-size: 16px;
+        /*border: 1px solid white;*/
+        font-family: 'Lato', sans-serif;
+        text-align: left;
+    }
 
-#footer {
-    padding-top: 0px;
-    padding-left: 10px;
-    font-size: 10px;
-    color: white;
-    background-color: #3498db;
-    position: fixed;
-    bottom: 0;
-    border-top: 2px solid #0d47a1;
-    width: 100%;
-}
+    #footer {
+        padding-top: 0px;
+        padding-left: 10px;
+        font-size: 10px;
+        color: white;
+        /*background-color: #3498db;*/
+        background-image: linear-gradient(to left, #1565c0, #1976d2, #1e88e5);
+        position: fixed;
+        bottom: 0;
+        border-top: 2px solid #0d47a1;
+        width: 100%;
+    }
 
-#content {
-    margin-top: 150px;
-    margin-bottom: 60px;
-    color: black;
-    padding: 10px;
-    background-color: #ededed;
-}
+    #menu {
+        padding: 5px;
+        padding-bottom: 16px;
+        margin: 0;
+        background-color: white;
+        color: black;
+        position: fixed;
+        top: 55px;
+        left: 0px;
+        width: 100%;
+        height: 75px;
+        border-top: 5px solid #3498db;
+        border-bottom: 1px solid #cccccc;
+        justify-content: flex-start;
+        display: inline-flex;
+        overflow-x: auto;
+    }
 
-.article {
-    margin-top: 50px;
-    padding: 10px;
-    background-color: white;
-}
+    #menu .icon {
+        width: 45px;
+        margin: 5px 17px;
+        align-content: center;
+        /*border: 1px solid black;
+        border-radius: 4px;*/
+        opacity: 0.75;
+    }
 
-#menu {
-    padding: 5px;
-    padding-bottom: 16px;
-    margin: 0;
-    background-color: white;
-    color: black;
-    position: fixed;
-    top: 55px;
-    left: 0px;
-    width: 100%;
-    height: 75px;
-    border-top: 5px solid #3498db;
-    border-bottom: 1px solid #cccccc;
-    justify-content: flex-start;
-    display: inline-flex;
-}
+    #menu .text {
+        width: 63px;
+        margin: 4px 8px;
+        font-size: 14px;
+        /*border: 1px solid black;*/
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        justify-content: center;
+        z-index: 0;
+    }
 
-#menu .icon {
-    width: 45px;
-    margin: 5px 17px;
-    align-content: center;
-    /*border: 1px solid black;
-    border-radius: 4px;*/
-    opacity: 0.75;
-}
+    #menu .text:hover {
+        color: #3498db;
+        z-index: 1;
+    }
 
-#menu .text {
-    width: 63px;
-    margin: 4px 8px;
-    font-size: 14px;
-    /*border: 1px solid black;*/
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    justify-content: center;
-    z-index: 0;
-}
+    #panel {
+        padding: 10px;
+        width: 20%;
+        font-size: 10px;
+        color: black;
+        background-color: white;
+        position: fixed;
+        right: 0;
+        top: 156px;
+        bottom: 36px;
+        height: auto;
+        border: 1px solid #dddddd;
+    }
 
-#menu .text:hover {
-    color: #3498db;
-    z-index: 1;
-}
+    #content {
+        margin-top: 150px;
+        margin-bottom: 35px;
+        margin-left: 0px;
+        color: black;
+        padding: 10px;
+        width: 80%;
+        background-color: #ededed;
+    }
 
-#panel {
-    padding: 10px;
-    width: 350px;
-    font-size: 10px;
-    color: black;
-    background-color: white;
-    position: fixed;
-    right: 0;
-    top: 156px;
-    bottom: 36px;
-    height: auto;
-    border: 1px solid #dddddd;
+    #editor1 {
+        /*border: 1px solid green;*/
+        /*Inserting the values for the A4 sheet here*/
+        height: 842px;
+        width: 595px;
+        background-color: white;
+        background-color: #f5f5f5 margin: auto;
+        padding: 147px;
+        margin: 15px auto 10px;
+    }
+
+    [contentEditable="true"]:empty:not(:focus):before {
+        color: #888;
+    }
 }
