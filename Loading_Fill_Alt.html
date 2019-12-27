@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        #a {
+            margin-left: 950px;
+            margin-top: 330px;
+            height: 56px;
+            width: 56px;
+            background-color: #27ae60;
+
+            border-radius: 45% 8% 45% 45%;
+
+            animation-name: w;
+            animation-duration: 2.1s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+
+        @keyframes w {
+
+            0% {
+                margin-left: 950px;
+                margin-top: 330px;
+                background-color: #27ae60;
+
+                border-radius: 45% 8% 45% 45%;
+            }
+
+            24.99% {
+                background-color: #27ae60;
+            }
+
+
+            25% {
+                margin-left: 950px;
+                margin-top: 370px;
+                background-color: #f1c40f;
+
+                border-radius: 45% 45% 8% 45%;
+            }
+
+            49.99% {
+                background-color: #f1c40f;
+            }
+
+            50% {
+                margin-left: 910px;
+                margin-top: 330px;
+                background-color: #3498db;
+
+                border-radius: 8% 45% 45% 45%;
+            }
+
+            74.99% {
+                background-color: #3498db;
+            }
+
+            75% {
+                margin-left: 910px;
+                margin-top: 370px;
+                background-color: #e74c3c;
+
+                border-radius: 45% 45% 45% 8%;
+            }
+
+            99.9% {
+                background-color: #e74c3c;
+            }
+        }
+
+    </style>
+</head>
+
+<body onload="f();">
+
+    <div id="a"></div>
+
+</body>
+<script>
+    function f() {
+        setTimeout(function() {
+            window.location.href = 'file:///C:/Work/ShareDocs/Backend/WordLogin.html'
+        }, 4000);
+
+    }
+
+</script>
+
+</html>
