@@ -7,14 +7,15 @@ function k() {
 //   var y=document.getElementsByName("uname").innerHTML;
 //   window.location.replace("/word/"+y+"/"+x);
 // }
-function viewContent() {
-  if (counterContent % 2 == 0) {
-    document.getElementById("content-create-doc").style.visibility = "visible";
-  } else {
-    document.getElementById("content-create-doc").style.visibility = "hidden";
-  }
-  counterContent = counterContent + 1;
-}
+
+// function viewContent() {
+//   if (counterContent % 2 == 0) {
+//     document.getElementById("content-create-doc").style.visibility = "visible";
+//   } else {
+//     document.getElementById("content-create-doc").style.visibility = "hidden";
+//   }
+//   counterContent = counterContent + 1;
+// }
 
 function searchQuery() {
   var text = document.getElementById("fileSearch").value;
@@ -284,6 +285,11 @@ function viewSelectionPane() {
   } else {
     document.getElementById("share-selection-pane").style.visibility = "hidden";
   }
+  counterSelectionPane = counterSelectionPane + 1;
+}
+
+function hideSelectionPane() {
+  document.getElementById("share-selection-pane").style.visibility = "hidden";
   counterSelectionPane = counterSelectionPane + 1;
 }
 

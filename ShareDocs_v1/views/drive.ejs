@@ -1,7 +1,16 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <title>CoverDrive</title>
+    <title>
+      <% var date_Today = new Date(); %>
+      <% var newObjects = 0; %>
+      <% for ( var k = 0; k  < doc_.length; k++) { %>
+        <%if( (doc_[k].date.getDate() == date_Today.getDate()) && (doc_[k].date.getMonth() == date_Today.getMonth()) && (doc_[k].date.getFullYear() == date_Today.getFullYear()) ) { %>
+          <% newObjects++; %>
+        <% } %>
+      <% } %>
+      MyDocs (<%= newObjects %>) - <%= user_name %>
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../public/assets/projectLogo.ico" />
     <link
@@ -47,7 +56,7 @@
       </div>
     </div>
 
-    <div id="quick-access">
+    <div id="quick-access" style="overflow: auto;">
        <% var boxes = doc_.length > 5 ? 5 : doc_.length %>
        <% for(var i = 0; i < boxes ; i++) { %>
         <div id="quick-access-box">
@@ -503,6 +512,13 @@
     </div>
 
     <div id="share-selection-pane">
+
+      <div id="close-button"
+        style="position: absolute; right: 10px; top: 10px; z-index: 12; cursor: pointer;"
+        onclick="hideSelectionPane()"
+      >
+        &#x274C
+      </div>
       <label for="officialName"><b>Name:</b></label>
       <input
         type="text"
