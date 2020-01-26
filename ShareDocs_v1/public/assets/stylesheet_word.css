@@ -312,59 +312,59 @@
     }*/
 
     #format-text-panel .bold {
-        background-image: url("assets/icons/bold.png");
+        background-image: url("icons_word/bold.png");
         margin-left: 10px;
         margin-top: 0px;
     }
 
     #format-text-panel .italic {
-        background-image: url("assets/icons/italics.png");
+        background-image: url("icons_word/italics.png");
     }
 
     #format-text-panel .underline {
-        background-image: url("assets/icons/underlined.png");
+        background-image: url("icons_word/underlined.png");
     }
 
     #format-text-panel .align-left {
-        background-image: url("assets/icons/align_left.png");
+        background-image: url("icons_word/align_left.png");
         margin-left: 10px;
         margin-top: 10px;
     }
 
     #format-text-panel .align-right {
-        background-image: url("assets/icons/align_right.png");
+        background-image: url("icons_word/align_right.png");
     }
 
     #format-text-panel .align-center {
-        background-image: url("assets/icons/align_center.png");
+        background-image: url("icons_word/align_center.png");
     }
 
     #format-text-panel .redo-apply {
-        background-image: url("assets/icons/redo.svg");
+        background-image: url("icons_word/redo.svg");
         background-color: #eeeeee;
         border: none;
         border-radius: 5px;
     }
 
     #format-text-panel .undo-apply {
-        background-image: url("assets/icons/undo.svg");
+        background-image: url("icons_word/undo.svg");
     }
 
     #format-text-panel .copy-view {
-        background-image: url("assets/icons/copy_alt.png");
+        background-image: url("icons_word/copy_alt.png");
     }
 
     #format-text-panel .unorderedlist {
-        background-image: url("assets/icons/bulleted_list.png");
+        background-image: url("icons_word/bulleted_list.png");
     }
 
     #format-text-panel .orderedlist {
-        background-image: url("assets/icons/numbered_list.png");
+        background-image: url("icons_word/numbered_list.png");
         margin-left: 10px;
     }
 
     #format-text-panel .strikethrough {
-        background-image: url("assets/icons/strikethrough.png");
+        background-image: url("icons_word/strikethrough.png");
         width: 38px;
     }
 

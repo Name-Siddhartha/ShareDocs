@@ -573,7 +573,14 @@
     <div id="content">
       <div id="resize-table" onclick="resizeTable()"></div>
 
-      <div id="editor1" contenteditable="true" name="imp"><%- doc_text %></div>
+      <div
+        id="editor1"
+        contenteditable="true"
+        name="imp"
+        style="outline: 0 solid transparent;"
+      >
+        <%- doc_text %>
+      </div>
     </div>
 
     <div id="footer">
